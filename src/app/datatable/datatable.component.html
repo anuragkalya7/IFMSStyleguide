@@ -1,8 +1,15 @@
-<mat-form-field appearance="standard">
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-  </mat-form-field>
-  
+<div class="row d-flex align-items-center">
+  <div class="col-8">
+    <mat-form-field appearance="standard">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    </mat-form-field>
+  </div>
+  <div class="col-4">
+    <button class="btn btn-primary float-end" mat-raised-button color="primary">Download Data</button>
+  </div>
+</div>
+
   <div class="">
     <table mat-table [dataSource]="dataSource" matSort class="w-100">
   

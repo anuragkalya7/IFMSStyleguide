@@ -274,8 +274,8 @@ background-color: #231E60;
 .Search-btn-position
 {
     position: absolute;
-    right: 7px;
-    top: 10px;
+    right: 0px;
+    top: 4px;
 }
 /*-----------------------------*/
   /*Components - HEADER*/
@@ -293,7 +293,7 @@ table .thead-light
 }
 .table .thead-light th
 {
-    background-color: #f5f5ff !important;
+    background-color: #F5F5FF!important;
     color: #000;
     border: none;
 }
@@ -406,3 +406,18 @@ li.breadcrumb-item
 {
 
 }
+.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end, .mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-gap
+{
+    border-width: 1px!important;
+}
+mat-form-field.mat-form-field.mat-form-field-appearance-outline > div.mat-form-field-wrapper > div.mat-form-field-flex > div.mat-form-field-infix  { padding: 0.4em 0px }
+mat-form-field.mat-form-field.mat-form-field-appearance-outline > div.mat-form-field-wrapper > div.mat-form-field-flex > div.mat-form-field-infix > span.mat-form-field-label-wrapper { top: -1.5em; }
+
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1.1em) scale(.75);
+    width: 133.33333%;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: white!important;
+    border-radius: 5px!important;
+  }

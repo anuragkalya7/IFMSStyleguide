@@ -1,6 +1,8 @@
-tr.mat-header-row th
+tr.mat-header-row th, .mat-header-cell
 {
-    background: #F5F5FF !important;
-    color: #231E60;
+    background: #E2F1FB !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #2471bc;
     font-weight: 600;
 }

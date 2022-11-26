@@ -93,7 +93,7 @@
     -webkit-align-items: center;
     align-items: center;
     white-space: nowrap;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 20px 10px 15px;
     color: #484848;
     border-radius: 0px 20px 20px 0px;
     -webkit-transition-duration: 0.45s;
@@ -402,7 +402,7 @@
       -webkit-transition: all 0.25s ease-out;
       -o-transition: all 0.25s ease-out;
       transition: all 0.25s ease-out;
-      padding-top: 50px;
+      padding-top: 60px;
       width: 285px;
     }
     .sidebar-offcanvas.active {

@@ -222,8 +222,8 @@ background-color: #231E60;
 .Search-btn-position
 {
     position: absolute;
-    right: 7px;
-    top: 10px;
+    right: 0px;
+    top: 4px;
 }
 /*-----------------------------*/
   /*Components - HEADER*/
