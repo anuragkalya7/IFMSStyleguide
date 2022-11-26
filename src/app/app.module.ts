@@ -33,7 +33,6 @@ import { DatatableComponent } from './datatable/datatable.component';
 // datatable
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import { SidebaemenuComponent } from './sidebaemenu/sidebaemenu.component';
 import { SteperComponent } from './steper/steper.component';
 // import { SearchdropdownComponent } from './searchdropdown/searchdropdown.component';
 import {MatStepperModule} from '@angular/material/stepper';
@@ -54,7 +53,6 @@ import { MuliselectautocopleteComponent } from './muliselectautocoplete/mulisele
     EmployeeServiceDetailsComponent,
     AttachfileComponent,
     DatatableComponent,
-    SidebaemenuComponent,
     SteperComponent,
     MuliselectautocopleteComponent,
     // SearchdropdownComponent
