@@ -37,7 +37,8 @@ import { SteperComponent } from './steper/steper.component';
 // import { SearchdropdownComponent } from './searchdropdown/searchdropdown.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import { MuliselectautocopleteComponent } from './muliselectautocoplete/muliselectautocoplete.component';
-
+import { TogglesidemenuComponent } from './togglesidemenu/togglesidemenu.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { MuliselectautocopleteComponent } from './muliselectautocoplete/mulisele
     DatatableComponent,
     SteperComponent,
     MuliselectautocopleteComponent,
+    TogglesidemenuComponent,
     // SearchdropdownComponent
     
   ],
@@ -80,9 +82,11 @@ import { MuliselectautocopleteComponent } from './muliselectautocoplete/mulisele
     FormsModule,
     MatDatepickerModule,
     MatStepperModule,
+    MatSidenavModule,
     // datatable
     MatSortModule,
     MatPaginatorModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
 <div class="light_grey_bg" id="mySidenav1">
     <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12 pt-4">   
         <nav class="sidebar sidebar-offcanvas pe-3 " id="sidebar">
+            <button onclick="openMenu()"  mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>menu</mat-icon>
+					  </button>
           <div class="px-3">
             <div class="input-group">
               <mat-form-field class="w-100" appearance="outline">
@@ -76,3 +79,8 @@
     
     </div>
 </div>
+<script>
+   function openMenu() {
+    document.getElementById("mySidenav1").style.display = "none";
+  }
+</script>
