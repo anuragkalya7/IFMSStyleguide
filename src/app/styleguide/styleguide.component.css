@@ -122,6 +122,11 @@ h1, h2, h3, h4, h5, h6
     border: 1px solid #F0CA1B;
     color: #F0CA1B;
 }
+.btn-outline-cancel
+{
+    border: 1px solid #8E8E8E;
+    color: #8E8E8E;
+}
 .btn-outline-white
 {
     border: 1px solid #ffffff;

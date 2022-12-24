@@ -39,6 +39,9 @@ import {MatStepperModule} from '@angular/material/stepper';
 import { MuliselectautocopleteComponent } from './muliselectautocoplete/muliselectautocoplete.component';
 import { TogglesidemenuComponent } from './togglesidemenu/togglesidemenu.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { FormComponent } from './form/form.component';
+import { MatSelect, MatSelectModule } from '@angular/material/select';
+import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -57,6 +60,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     SteperComponent,
     MuliselectautocopleteComponent,
     TogglesidemenuComponent,
+    FormComponent,
     // SearchdropdownComponent
     
   ],
@@ -66,6 +70,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     NgbModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
+    MatSelectModule,
     MatRadioModule,
     MatSlideToggleModule,
     MatButtonToggleModule,
@@ -87,6 +92,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatSortModule,
     MatPaginatorModule,
     MatSidenavModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

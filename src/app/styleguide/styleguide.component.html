@@ -18,6 +18,7 @@
     <button class="btn btn-outline-primary ms-2" mat-stroked-button color="primary">Primary</button>
     <button class="btn btn-outline-secondary ms-2" mat-stroked-button color="secondary">Secondary</button>
     <button class="btn btn-outline-tertiary ms-2" mat-stroked-button color="tertiary">Tertiary</button>
+    <button class="btn btn-outline-cancel ms-2" mat-stroked-button>Cancel</button>
     <button class="btn btn-link btn-link-primary ms-2" mat-button color="primary">CTA link Primary</button>
     <button class="btn btn-link btn-link-secondary ms-2" mat-button color="secondary">CTA link Secondary</button>
 </div>
@@ -178,7 +179,7 @@
       <h1>Card Square</h1>
       <div class="row">
       <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <mat-card class="card square-card">
+        <mat-card class="card_gradient square-card">
           <div class="content">
             <img src="assets/images/icon.svg">
             <h3 class="mt-2">Format</h3>
@@ -186,7 +187,7 @@
         </mat-card>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <mat-card class="card square-card">
+        <mat-card class="card_gradient square-card">
           <div class="content">
             <img src="assets/images/icon.svg">
             <h3 class="mt-2">Format</h3>
@@ -194,7 +195,7 @@
         </mat-card>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <mat-card class="card square-card">
+        <mat-card class="card_gradient square-card">
           <div class="content">
             <img src="assets/images/icon.svg">
             <h3 class="mt-2">Format</h3>
@@ -202,7 +203,7 @@
         </mat-card>
       </div>
       <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <mat-card class="card square-card">
+        <mat-card class="card_gradient square-card">
           <div class="content">
             <img src="assets/images/icon.svg">
             <h3 class="mt-2">Format</h3>
@@ -215,7 +216,7 @@
     <div class="mt-5">
       <h1>Card Rectengular</h1>
       
-      <mat-card class="card rectangular-card w-100 cursor">
+      <mat-card class="card_gradient rectangular-card w-100 cursor">
         
           <img src="assets/images/icon.svg">
           <span class="ms-3">Simple card</span>
@@ -253,7 +254,7 @@
           </mat-expansion-panel-header>
           <p>I'm visible because I am open</p>
         </mat-expansion-panel>
-        <mat-expansion-panel class="card_accordion" (opened)="panelOpenState = true"
+        <mat-expansion-panel class="card_gradient_accordion" (opened)="panelOpenState = true"
                             (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
