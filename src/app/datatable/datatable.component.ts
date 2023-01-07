@@ -2,6 +2,8 @@ import {AfterViewInit, Component, OnInit,ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import {MatDialog} from '@angular/material/dialog';
+import { DialogContentExampleDialogComponent } from '../dialog-content-example-dialog/dialog-content-example-dialog.component';
 export interface UserData {
   id: string;
   name: string;
@@ -45,6 +47,8 @@ const NAMES: string[] = [
   templateUrl: './datatable.component.html',
   styleUrls: ['./datatable.component.css']
 })
+
+
 export class DatatableComponent implements OnInit {
   displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
   dataSource: MatTableDataSource<UserData>;
@@ -52,7 +56,7 @@ export class DatatableComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {
+  constructor(public dialog: MatDialog ) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
@@ -62,6 +66,8 @@ export class DatatableComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -76,7 +82,17 @@ export class DatatableComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+  openDialog() {
+    this.dialog.open(DialogContentExampleDialogComponent,
+      {
+        panelClass: 'dialog-w-50'
+      }
+      );
+    
+  }
+  
 }
+
 
 /** Builds and returns a new User. */
 function createNewUser(id: number): UserData {

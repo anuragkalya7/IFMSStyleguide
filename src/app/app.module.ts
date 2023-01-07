@@ -42,6 +42,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FormComponent } from './form/form.component';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import { DialogContentExampleDialogComponent } from './dialog-content-example-dialog/dialog-content-example-dialog.component';
+
 
 
 @NgModule({
@@ -61,6 +63,7 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
     MuliselectautocopleteComponent,
     TogglesidemenuComponent,
     FormComponent,
+    DialogContentExampleDialogComponent,
     // SearchdropdownComponent
     
   ],

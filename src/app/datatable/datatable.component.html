@@ -1,12 +1,17 @@
 <div class="row d-flex align-items-center">
-  <div class="col-8">
-    <mat-form-field appearance="standard">
-      <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-    </mat-form-field>
-  </div>
-  <div class="col-4">
-    <button class="btn btn-primary float-end" mat-raised-button color="primary">Download Data</button>
+  <div class="col-7"><h3>DR Master</h3></div>
+  <div class="col-5">
+    <div class="row">
+      <div class="col-9">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Search by Pay Commission</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Search by Pay Commission" #input>
+        </mat-form-field>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-primary float-end" mat-raised-button color="primary" (click)="openDialog()">Create New DR</button>
+      </div> 
+    </div>
   </div>
 </div>
 
